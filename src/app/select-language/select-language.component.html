@@ -1,8 +1,8 @@
 <div class="select-language-container">
    <div>Select a langage</div>
-   <mat-radio-group class="language-options" aria-label="Select an option">
+   <mat-radio-group (change)="onChange($event)" class="language-options" aria-label="Select an option">
       <mat-radio-button labelPosition="before" value="1">Option 1</mat-radio-button>
       <mat-radio-button labelPosition="before" value="2">Option 2</mat-radio-button>
     </mat-radio-group>
-   <button [routerLink]="['/dashboard']">Confirm Selection</button>
+   <button [disabled]="selectedValue===0" (click)="redirectPage()">Confirm Selection</button>
 </div>
