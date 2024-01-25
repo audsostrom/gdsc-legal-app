@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { SelectLanguageComponent } from './select-language/select-language.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
