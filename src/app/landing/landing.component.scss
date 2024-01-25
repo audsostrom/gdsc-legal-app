@@ -1,0 +1,22 @@
+
+
+.landing-container {
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(180deg, #141466 0%, #DADADA 100%);
+   width: 100vw;
+   height: 100vh;
+
+
+   color: white;
+   height: 100%;
+   font-size: 28px;
+   font-family: 'Playfair Display';
+   font-weight: 400;
+   word-wrap: break-word;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
