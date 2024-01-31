@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   // footer is basically that bottom row on pages that takes you to home, map, or profile
+  constructor(private router: Router) { }
+
+  redirect(page: string) {
+    this.router.navigate([`/${page}`]);
+  }
 
 }
