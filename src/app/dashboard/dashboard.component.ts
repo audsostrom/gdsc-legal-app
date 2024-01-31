@@ -13,7 +13,7 @@ export class DashboardComponent {
   topics = ['Education', 'Judicial Systems', 'Immigration Cases', 'Health Care']
 
   goToTopic(topic: string) {
-    this.router.navigate([`/${topic.toLowerCase()}`]);
+    this.router.navigate([`/${topic.replace(/\s+/g, '-').toLowerCase()}`]);
   }
 
 }
