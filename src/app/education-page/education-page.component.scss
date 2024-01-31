@@ -1,0 +1,22 @@
+.education-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: 'Poppins';
+   .header {
+      background: #984063;
+      font-weight: bold;
+      color: white;
+      font-size: 36px;
+      text-align: center;
+   }
+   .page-button {
+      width: 150px;
+      border-radius: 20px;
+      background: #141466;
+      color: white;
+      border: none;
+
+   }
+
+}

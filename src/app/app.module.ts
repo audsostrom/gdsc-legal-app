@@ -8,6 +8,8 @@ import { SelectLanguageComponent } from './select-language/select-language.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatRadioModule} from '@angular/material/radio';
+import { EducationPageComponent } from './education-page/education-page.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { MatRadioModule} from '@angular/material/radio';
     LandingComponent,
     SelectLanguageComponent,
     DashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EducationPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
