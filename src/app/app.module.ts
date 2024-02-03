@@ -8,8 +8,14 @@ import { SelectLanguageComponent } from './select-language/select-language.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MatRadioModule} from '@angular/material/radio';
+<<<<<<< HEAD
+import { EducationComponent } from './education/education.component';
+import { FactComponent } from './fact/fact.component';
+import { FactService } from './fact.service';
+=======
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+>>>>>>> 030eeafc5baf673c4df1b546456fd17e35520dc9
 
 @NgModule({
   declarations: [
@@ -18,15 +24,20 @@ import { FooterComponent } from './shared/footer/footer.component';
     SelectLanguageComponent,
     DashboardComponent,
     PageNotFoundComponent,
+<<<<<<< HEAD
+    EducationComponent,
+    FactComponent
+=======
     EducationPageComponent,
     FooterComponent
+>>>>>>> 030eeafc5baf673c4df1b546456fd17e35520dc9
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatRadioModule,
   ],
-  providers: [],
+  providers: [FactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
