@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: 'education', component: EducationPageComponent},
   {path: '', component: LandingComponent},
   {path: 'education', component: EducationComponent},
-  {path: 'google-map', component: GoogleMapsComponent},
-  {path: 'quiz', component: QuizComponent},
+  {path: 'google-maps', component: GoogleMapsComponent},
+  {path: 'quiz/:id', component: QuizComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 

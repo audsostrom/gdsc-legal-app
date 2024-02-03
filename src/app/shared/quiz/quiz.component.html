@@ -1,23 +1,26 @@
 <div class="quiz-container">
-   <div *ngFor="let question of questions; index as i">
-      <div class="question-header">Question {{i+1}}</div>
-      <div class="question-prompt"></div>
+   <div class="header">Education</div>
+   <div class="options-wrapper" *ngFor="let question of questions; index as i">
+      <div class="question-header"><b>Question {{i+1}}</b></div>
+      <div class="question-prompt">{{question.prompt}}</div>
       <div class="question-options">
          <mat-radio-group (change)="onChange($event)" class="language-options" aria-label="Select an option">
             <div class="option-row">
+               <mat-radio-button class="button" value="option1"></mat-radio-button> 
                <div class="button-label">{{question.options[0]}}</div>
-               <mat-radio-button class="button" value="0"></mat-radio-button> 
             </div>
             <div class="option-row">
+               <mat-radio-button class="button" value="option2"></mat-radio-button> 
                <div class="button-label">{{question.options[1]}}</div>
-               <mat-radio-button class="button" value="1"></mat-radio-button> 
             </div>
             <div class="option-row">
+               <mat-radio-button class="button" value="option3"></mat-radio-button> 
                <div class="button-label">{{question.options[2]}}</div>
-               <mat-radio-button class="button" value="2"></mat-radio-button> 
             </div>
        </mat-radio-group>
       </div>
    </div>
+   <button [disabled]='selectedValue===0' class='confirm-button'>Submit Answers</button>
+
 
 </div>

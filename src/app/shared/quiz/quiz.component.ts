@@ -12,19 +12,19 @@ export class QuizComponent {
   questions = [
 
     {
-      prompt: 'What is 2+2',
+      prompt: 'What is 2+2?',
       options: [2, 3, 4],
       answerIndex: 2,
     },
     {
-      prompt: 'What is 2+2',
-      options: [2, 3, 4],
+      prompt: 'What is 2+3?',
+      options: [2, 3, 5],
       answerIndex: 2,
 
     },
     {
-      prompt: 'What is 2+2',
-      options: [2, 3, 4],
+      prompt: 'What is 2+4?',
+      options: [2, 3, 6],
       answerIndex: 2,
     },
   ]
