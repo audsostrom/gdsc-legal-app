@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class SelectLanguageComponent implements OnInit {
   selectedValue: number = 0;
+  languages = ['English', 'Spanish', 'Arabic']
+  
   onChange(event: MatRadioChange) {
     this.selectedValue = event.value;
   }
