@@ -14,6 +14,7 @@ import { FactService } from './fact.service';
 
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { GoogleMapsComponent } from './google-maps/google-maps.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     EducationComponent,
     FactComponent,
     EducationPageComponent,
-    FooterComponent
+    FooterComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,

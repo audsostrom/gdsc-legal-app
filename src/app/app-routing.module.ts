@@ -6,6 +6,7 @@ import { SelectLanguageComponent } from './select-language/select-language.compo
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EducationPageComponent } from './education-page/education-page.component';
 import { EducationComponent } from './education/education.component';
+import { GoogleMapsComponent } from './google-maps/google-maps.component';
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'education', component: EducationPageComponent},
   {path: '', component: LandingComponent},
   {path: 'education', component: EducationComponent},
+  {path: 'google-maps', component: GoogleMapsComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
 
