@@ -1,0 +1,23 @@
+<div class="quiz-container">
+   <div *ngFor="let question of questions; index as i">
+      <div class="question-header">Question {{i+1}}</div>
+      <div class="question-prompt"></div>
+      <div class="question-options">
+         <mat-radio-group (change)="onChange($event)" class="language-options" aria-label="Select an option">
+            <div class="option-row">
+               <div class="button-label">{{question.options[0]}}</div>
+               <mat-radio-button class="button" value="0"></mat-radio-button> 
+            </div>
+            <div class="option-row">
+               <div class="button-label">{{question.options[1]}}</div>
+               <mat-radio-button class="button" value="1"></mat-radio-button> 
+            </div>
+            <div class="option-row">
+               <div class="button-label">{{question.options[2]}}</div>
+               <mat-radio-button class="button" value="2"></mat-radio-button> 
+            </div>
+       </mat-radio-group>
+      </div>
+   </div>
+
+</div>
