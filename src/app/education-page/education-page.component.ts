@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { englishData } from '../../data/data';
+import { map, takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-education-page',
@@ -8,9 +10,17 @@ import { englishData } from '../../data/data';
   styleUrls: ['./education-page.component.scss']
 })
 export class EducationPageComponent {
+  /** Unsubscribe observable for subscriptions. */
+  unsubscribe$: Subject<void> = new Subject();
 
   @Input() section: string = 'education-for-children'; // idk what the type is lol
-  constructor(private router: Router){
+  pageSection$ = this.route.paramMap.pipe(
+    map((params) => params.get('page')),
+  );
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    ){
   }
   // id is hardcoded, needs to be transferred to firebase later
   id: string = "education";
@@ -28,6 +38,20 @@ export class EducationPageComponent {
 
     }
   }
+  ngOnInit() {
+    // --------------- EVENT HANDLING ----------------------
+
+
+    // --------------- LOAD DATA ---------------------------
+    // subscription for logging major Group (used for debugging)
+    this.pageSection$.pipe(
+      takeUntil(this.unsubscribe$),
+    ).subscribe((majorGroup) => {
+      console.log(majorGroup);
+    });
+
+  }
+
 
 
 }
