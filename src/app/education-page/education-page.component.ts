@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { englishData } from '../../data/data';
 
 @Component({
   selector: 'app-education-page',
@@ -7,26 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./education-page.component.scss']
 })
 export class EducationPageComponent {
+
+  @Input() section: string = 'education-for-children'; // idk what the type is lol
   constructor(private router: Router){
   }
-
   // id is hardcoded, needs to be transferred to firebase later
   id: string = "education";
   // use this text to update when people go to the next section
-  content = [
-    {
-      headerTitle: 'header 1',
-      bodyText: 'hello',
-      image: '../../assets/images/education-2.jpeg'
-    },
-    {
-      headerTitle: 'header 2',
-      bodyText: 'lorem ipsum',
-      image: '../../assets/images/education-2.jpeg'
-    },
+  content = englishData[this.section as keyof typeof englishData]['content'];
 
-  ] 
-  pageNum = 0
+  pageNum: number = 0;
   changeText() {
     // don't move on past a certain point
     if (this.pageNum != this.content.length - 1) {

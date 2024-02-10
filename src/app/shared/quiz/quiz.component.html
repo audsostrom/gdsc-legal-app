@@ -4,23 +4,23 @@
       <div class="question-header"><b>Question {{i+1}}</b></div>
       <div class="question-prompt">{{question.prompt}}</div>
       <div class="question-options">
-         <mat-radio-group (change)="onChange($event)" class="language-options" aria-label="Select an option">
+         <mat-radio-group (change)="onChange($event, i)" class="language-options" aria-label="Select an option">
             <div class="option-row">
-               <mat-radio-button class="button" value="option1"></mat-radio-button> 
+               <mat-radio-button class="button" value=1></mat-radio-button> 
                <div class="button-label">{{question.options[0]}}</div>
             </div>
             <div class="option-row">
-               <mat-radio-button class="button" value="option2"></mat-radio-button> 
+               <mat-radio-button class="button" value=2></mat-radio-button> 
                <div class="button-label">{{question.options[1]}}</div>
             </div>
             <div class="option-row">
-               <mat-radio-button class="button" value="option3"></mat-radio-button> 
+               <mat-radio-button class="button" value=3></mat-radio-button> 
                <div class="button-label">{{question.options[2]}}</div>
             </div>
        </mat-radio-group>
       </div>
    </div>
-   <button [disabled]='selectedValue===0' class='confirm-button'>Submit Answers</button>
+   <button [disabled]="selectedValue.includes('')" class='confirm-button' (click)="submitAnswers()">Submit Answers</button>
 
 
 </div>

@@ -8,6 +8,7 @@ import { EducationPageComponent } from './education-page/education-page.componen
 import { EducationComponent } from './education/education.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { QuizComponent } from './shared/quiz/quiz.component';
+import { CongratsComponent } from './congrats/congrats.component';
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'education', component: EducationComponent},
   {path: 'google-maps', component: GoogleMapsComponent},
-  {path: 'quiz/:id', component: QuizComponent},
+  {path: 'congrats', component: CongratsComponent},
+  {path: 'quiz/:id', component: QuizComponent}, // need route parameters for this
   {path: '**', component: PageNotFoundComponent},
 ];
 
