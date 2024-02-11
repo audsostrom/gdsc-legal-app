@@ -5,5 +5,5 @@
    <div class="body" *ngFor="let paragraph of content[pageNum].bodyText">
       <div class="paragraph" [innerText]="paragraph"></div>
    </div>
-   <button class="page-button" (click)="changeText()">Page {{pageNum + 1}}/{{content.length}}</button>
+   <button class="page-button" (click)="changeText()">Page {{pageNum + 1}} / {{content.length}}</button>
 </div>
