@@ -1,4 +1,4 @@
-<div class="education-container"  *ngIf="pageSection$ | async">
+<div class="education-container" *ngIf="content$ | async as content">
    <div class="header">Education</div>
    <img class="page-image" src={{content[pageNum].image}}/>
    <div class="sub-header">{{content[pageNum].headerTitle}}</div>

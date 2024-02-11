@@ -12,28 +12,32 @@ import { Subject } from 'rxjs';
 export class EducationPageComponent {
   /** Unsubscribe observable for subscriptions. */
   unsubscribe$: Subject<void> = new Subject();
+  contentLength: number = 0;
 
-  @Input() section: string = 'education-for-children'; // idk what the type is lol
+  // @Input() section: string = 'education-for-children'; // idk what the type is lol
   pageSection$ = this.route.paramMap.pipe(
-    map((params) => params.get('page')),
+    map((params) => params.get('id')),
+  );
+
+  content$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['content']) 
   );
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    ){
+  ){
   }
   // id is hardcoded, needs to be transferred to firebase later
   id: string = "education";
   // use this text to update when people go to the next section
-  content = englishData[this.section as keyof typeof englishData]['content'];
+  // content = englishData[this.section as keyof typeof englishData]['content'];
 
   pageNum: number = 0;
   changeText() {
     // don't move on past a certain point
-    if (this.pageNum != this.content.length - 1) {
+    if (this.pageNum != this.contentLength - 1) {
       this.pageNum += 1
     }
-    else if (this.pageNum == this.content.length - 1) {
+    else if (this.pageNum == this.contentLength - 1) {
       this.router.navigate([`/quiz/${this.id}`]);
 
     }
@@ -44,10 +48,10 @@ export class EducationPageComponent {
 
     // --------------- LOAD DATA ---------------------------
     // subscription for logging major Group (used for debugging)
-    this.pageSection$.pipe(
+    this.content$.pipe(
       takeUntil(this.unsubscribe$),
-    ).subscribe((majorGroup) => {
-      console.log(majorGroup);
+    ).subscribe((content) => {
+      this.contentLength = content.length;
     });
 
   }

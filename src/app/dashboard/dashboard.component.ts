@@ -30,7 +30,7 @@ export class DashboardComponent {
   ];
 
   goToTopic(topic: string) {
-    this.router.navigate([`/${topic.replace(/\s+/g, '-').toLowerCase()}`, {page: topic}]);
+    this.router.navigate([`section/${topic.replace(/\s+/g, '-').toLowerCase()}/`]);
   }
 
 }
