@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'gdsc-legal-app';
+  path = this.router.url;
+
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
   ) {
+    console.log(router.url );
+    
   }
 
-  ngOnInit() { }
+  ngOnInit() { 
+  }
 }

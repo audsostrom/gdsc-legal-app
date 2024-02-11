@@ -16,12 +16,14 @@ export class SelectLanguageComponent implements OnInit {
   }
 
   constructor(private router: Router){
+    console.log(router.url );
   }
 
   redirectPage(){
     this.router.navigate(['/dashboard']);
   }
   ngOnInit() { 
+
   
   }
 

@@ -1,5 +1,5 @@
 
 <div class="content" role="main">
   <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  <app-footer *ngIf="path !== '/landing' && path !== '/select-language'"></app-footer>
 </div>

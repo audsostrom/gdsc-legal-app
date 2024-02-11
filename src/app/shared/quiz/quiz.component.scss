@@ -4,6 +4,7 @@
    flex-direction: column;
    justify-content: center;
    font-family: 'Poppins';
+   background: #F3F4F6;
 
    .header {
       background: #984063;
@@ -16,20 +17,14 @@
    .options-wrapper {
       align-self: center;
       margin-top: 20px;
-      background: white;
       width: 90%;
       border-radius: 10px;
-      .language-options {
-         background-color: #F5F6F7;
+      .question-options {
+         background-color: white;
          border: 1px solid #141466;
          box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.10);
          border-radius: 10px;
-
-         display: flex;
-         flex-direction: column;
-         align-items: flex-end;
-         justify-content: center;
-         margin: 10px 0px;
+         margin-top: 10px;
          .option-row {
             display: flex;
             align-items: center;
