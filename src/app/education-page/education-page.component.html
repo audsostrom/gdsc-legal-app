@@ -1,6 +1,9 @@
-<div class="education-container">
+<div class="education-container" *ngIf="content$ | async as content">
    <div class="header">Education</div>
-   <img src={{content[pageNum].image}}/>
-   <div>{{content[pageNum].bodyText}}</div>
-   <button class="page-button" (click)="changeText()">Page {{pageNum + 1}}/3</button>
+   <img class="page-image" src={{content[pageNum].image}}/>
+   <div class="sub-header">{{content[pageNum].headerTitle}}</div>
+   <div class="body" *ngFor="let paragraph of content[pageNum].bodyText">
+      <div class="paragraph" [innerText]="paragraph"></div>
+   </div>
+   <button class="page-button" (click)="changeText()">Page {{pageNum + 1}}/{{content.length}}</button>
 </div>

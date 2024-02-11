@@ -7,15 +7,17 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { EducationPageComponent } from './education-page/education-page.component';
 import { EducationComponent } from './education/education.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { QuizComponent } from './shared/quiz/quiz.component';
+import { CongratsComponent } from './congrats/congrats.component';
 
 const routes: Routes = [
   {path: 'landing', component: LandingComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'select-language', component: SelectLanguageComponent},
-  {path: 'education', component: EducationPageComponent},
-  {path: '', component: LandingComponent},
-  {path: 'education', component: EducationComponent},
+  {path: 'section/:id', component: EducationPageComponent}, // also need route params for this.
   {path: 'google-maps', component: GoogleMapsComponent},
+  {path: 'congrats', component: CongratsComponent},
+  {path: 'quiz/:id', component: QuizComponent}, // need route parameters for this
   {path: '**', component: PageNotFoundComponent},
 ];
 

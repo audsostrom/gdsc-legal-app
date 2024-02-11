@@ -14,7 +14,9 @@ import { FactService } from './fact.service';
 
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { QuizComponent } from './shared/quiz/quiz.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { CongratsComponent } from './congrats/congrats.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
     FactComponent,
     EducationPageComponent,
     FooterComponent,
-    GoogleMapsComponent
+    QuizComponent,
+    GoogleMapsComponent,
+    CongratsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
 .education-container {
    display: flex;
+   width: 100%;
    flex-direction: column;
    justify-content: center;
    font-family: 'Poppins';
+   position: relative;
    .header {
       background: #984063;
       font-weight: bold;
@@ -10,13 +12,39 @@
       font-size: 36px;
       text-align: center;
    }
+   .sub-header {
+      text-align: center;
+      font-weight: bold;
+      margin: 20px;
+      letter-spacing: 0.1em;
+   }
+   .body {
+      margin: 0px 20px;
+      .paragraph {
+         margin-bottom: 10px;
+      }
+   }
+   .page-image {
+      margin-top: 20px;
+      border-radius: 10px;
+      width: 80vw;
+      height: auto; // so picture looks appropriately big no matter
+      align-self: center;
+   }
    .page-button {
       width: 150px;
-      border-radius: 20px;
       background: #141466;
       color: white;
       border: none;
+      align-self: flex-end;
+      position: fixed;
+      bottom: 60px;
 
+      border: none;
+      background: #141466;
+      border-radius: 15px;
+      font-weight: 800;
+      padding: 10px 15px;
+      margin-right: 10px;
    }
-
 }
