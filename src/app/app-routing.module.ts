@@ -15,7 +15,6 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'select-language', component: SelectLanguageComponent},
   {path: 'section/:id', component: EducationPageComponent}, // also need route params for this.
-  {path: 'education', component: EducationComponent},
   {path: 'google-maps', component: GoogleMapsComponent},
   {path: 'congrats', component: CongratsComponent},
   {path: 'quiz/:id', component: QuizComponent}, // need route parameters for this
