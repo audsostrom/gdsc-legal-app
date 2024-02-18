@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { MatRadioModule} from '@angular/material/radio';
 import { EducationComponent } from './education/education.component';
 import { FactComponent } from './fact/fact.component';
 import { FactService } from './fact.service';
+
 
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -39,6 +41,7 @@ import { CongratsComponent } from './congrats/congrats.component';
     AppRoutingModule,
     MatRadioModule,
     GoogleMapsComponent,
+    FormsModule,
   ],
   providers: [FactService],
   bootstrap: [AppComponent]

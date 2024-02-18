@@ -5,17 +5,11 @@
       <div class="question-prompt">{{question.prompt}}</div>
       <div class="question-options">
          <mat-radio-group (change)="onChange($event, i)" class="language-options" aria-label="Select an option">
-            <div class="option-row">
-               <mat-radio-button class="button" value=1></mat-radio-button> 
-               <div class="button-label">{{question.options[0]}}</div>
-            </div>
-            <div class="option-row">
-               <mat-radio-button class="button" value=2></mat-radio-button> 
-               <div class="button-label">{{question.options[1]}}</div>
-            </div>
-            <div class="option-row">
-               <mat-radio-button class="button" value=3></mat-radio-button> 
-               <div class="button-label">{{question.options[2]}}</div>
+            <div *ngFor="let option of question.options; index as optionNum">
+               <div class="option-row">
+                  <mat-radio-button class="button" value={{optionNum}}></mat-radio-button> 
+                  <div class="button-label">{{option}}</div>
+               </div>
             </div>
        </mat-radio-group>
       </div>
