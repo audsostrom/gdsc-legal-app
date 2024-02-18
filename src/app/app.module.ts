@@ -16,8 +16,8 @@ import { EducationPageComponent } from './education-page/education-page.componen
 import { FooterComponent } from './shared/footer/footer.component';
 import { QuizComponent } from './shared/quiz/quiz.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { MapPageComponent } from './map-page/map-page.component';
 import { CongratsComponent } from './congrats/congrats.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +29,8 @@ import { CongratsComponent } from './congrats/congrats.component';
     FactComponent,
     EducationPageComponent,
     FooterComponent,
+    //GoogleMapsComponent,
+    MapPageComponent,
     QuizComponent,
     GoogleMapsComponent,
     CongratsComponent,
