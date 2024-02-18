@@ -140,7 +140,7 @@ export const englishData = {
        ]
    },
 
-   "Understand the Help You Need": {
+   "understand-the-help-you-need": {
       title: 'Labor Laws for Immigrants',
       description: 'It is important to research what kind of help you need and protect yourself from becoming a victim of immigration fraud. Understanding the right from wrong will prevent any more issues from occurring based on your immigration status',
       content: [
@@ -195,7 +195,7 @@ export const englishData = {
        ]
    },
 
-   "Labor Laws": {
+   "labor-laws": {
       title: 'Labor Laws for Immigrants',
       description: 'All workers should be able to work free from fear that they will be underpaid or placed in a dangerous environment. Unfortunately, this is not the case for many low-income immigrant workers in this country. Understanding your rights, raid responses and policy analysis is important for your safety. It is the policy of the DLSE not to question your immigration status Whether you are a documented or undocumented worker in California, you have rights protected by state laws that guarantee payment of wages for work performed',
       content: [
@@ -274,7 +274,7 @@ export const englishData = {
        ]
    },
 
-   "Resources": {
+   "resources": {
       title: 'Finding Legal Assistance',
       description: 'With any immigration issue, immigrants can check with the local bar association for help finding a qualified lawyer. Be careful, unfortunately, there are many dishonest individuals or businesses who may try to take advantage of you. In some cases, they will not only take your money but also may harm your immigration case. Sometimes these dishonest providers pretend to be attorneys or are immigration consultants who tell you that they can provide you with legal advice when they cannot.',
       content: [
@@ -345,4 +345,71 @@ export const englishData = {
          },
        ]
    },
+   "judicial-system": {
+      title: 'What is it?',
+      description: 'The judicial system is made up of different parts for interpreting and applying the law. These different parts include courts, judges, lawyers, and legal procedures. Its primary function is to resolve disputes and administer justice according to the laws established by the legislative branch. These all ensure that justice is brought and you person of the US will be put through this system.',
+      content: [
+         {
+           headerTitle: 'Immigration Courts',
+           bodyText: ["These are specialized courts that handle cases related to immigration law. Immigration courts are part of the Executive Office for Immigration Review (EOIR), which falls under the jurisdiction of the US Department of Justice. Immigration judges preside over these courts and adjudicate cases involving matters such as deportation/removal proceedings, asylum claims, and applications for relief from removal."],
+           image: ' '
+         },
+
+
+         {
+            headerTitle: 'Board of Immigration Appeals (BIA)',
+            bodyText: ["The BIA is an appellate body that reviews decisions made by immigration judges. If a party disagrees with the outcome of their case in immigration court, they can appeal to the BIA for a review. The BIA considers legal arguments and evidence presented by both sides before issuing a decision."],
+            image: '../../assets/images/education-2.jpeg',
+         },
+
+         {
+            headerTitle: 'Federal Courts',
+            bodyText: ["If a party is dissatisfied with the decision of the BIA or believes that their constitutional rights have been violated during the immigration proceedings, they may seek review in the federal court system. This typically involves filing a petition for review in a federal appeals court. Federal courts have the authority to review administrative decisions and ensure that they comply with the law"],
+            image: '../../assets/images/education-2.jpeg'
+         },
+
+
+         {
+            headerTitle: 'Legal Representation',
+            bodyText: ["immigrants in removal proceedings have the right to be represented by an attorney, but the government does not provide them with legal counsel. However, immigrants may seek assistance from nonprofit organizations, pro bono attorneys, or private immigration lawyers to represent them in court."],
+            image: '../../assets/images/education-2.jpeg'
+         },
+
+
+         {
+            headerTitle: 'Immigration Detention',
+            bodyText: ["Some immigrants may be detained by immigration authorities during removal proceedings. Detained immigrants have the right to appear before an immigration judge for a bond hearing, where the judge determines whether they should be released from custody pending the outcome of their case"],
+            image: '../../assets/images/education-2.jpeg'
+         },
+
+
+
+
+         {
+            headerTitle: 'Immigration Enforcement Agencies',
+            bodyText: ["Immigration enforcement is primarily carried out by agencies such as U.S. Immigration and Customs Enforcement (ICE) and U.S. Customs and Border Protection (CBP). These agencies investigate immigration violations, detain individuals suspected of being in the country unlawfully, and initiate removal proceedings."],
+            image: '../../assets/images/education-2.jpeg'
+         },
+
+
+      ],
+      quiz: [
+         {
+           prompt: 'What do immigration courts specialize in?',
+           options: ["Making sure immigrants are granted citizenship", "focus on deportation/removal proceedings", "asylum claims, and applications for relief from removal", "Help with"],
+           answer: 'focus on deportation/removal proceedings, asylum claims',
+         },
+         {
+           prompt: 'If you are dissatisfied with the decision of the BIA, what can you do?',
+           options: ["filing a petition for review in a federal appeals court", "File a complaint to the court", "Deal with the consequences"],
+           answer: 'filing a petition for review in a federal appeals court',
+     
+         },
+         {
+           prompt: 'What can you do to get legal representation if you do not have enough money?',
+           options: ["Pay lots of money to the first attorney you find", "do not get anyone to represent you as it will cause trouble", "seek assistance from nonprofit organizations"],
+           answer: 'seek assistance from nonprofit organizations',
+         },
+       ]
+   }
 }
