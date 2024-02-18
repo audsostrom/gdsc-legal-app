@@ -48,5 +48,3 @@ export class GoogleMapsComponent implements OnInit {
     });
   }
 }
-
-//Show nearby: notaries, lawyer offices, public libraries, community colleges, public schools?, embassies?, passport offices?

@@ -18,4 +18,3 @@ describe('GoogleMapsComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

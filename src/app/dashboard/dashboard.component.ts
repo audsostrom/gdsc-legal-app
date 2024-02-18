@@ -10,10 +10,27 @@ export class DashboardComponent {
   constructor(private router: Router){
   }
 
-  topics = ['Education', 'Judicial Systems', 'Immigration Cases', 'Health Care']
+  topics = [
+    {
+      topic: 'Education for Children',
+      route: 'education-for-children'
+    },
+    {
+      topic: 'Education for Adults',
+      route: 'education-for-adults'
+    },
+    {
+      topic: 'Judicial Systems',
+      route: 'judicial-systems',
+    },
+    {
+      topic: 'Health Care',
+      route: 'health-care',
+    },
+  ];
 
   goToTopic(topic: string) {
-    this.router.navigate([`/${topic.replace(/\s+/g, '-').toLowerCase()}`]);
+    this.router.navigate([`section/${topic.replace(/\s+/g, '-').toLowerCase()}/`]);
   }
 
 }

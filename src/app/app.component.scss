@@ -1,6 +1,13 @@
 .content {
    height: 100%;
    width: 100%;
+   position: relative;
+   background: #F3F4F6;
+   app-footer {
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 0;
+ }
  }
 
 

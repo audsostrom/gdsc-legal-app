@@ -1,9 +1,8 @@
 <div class="dashboard-container">
    <div class="header">What would you like to learn about?</div>
    <div class="topics" *ngFor="let topic of topics">
-      <div (click)="goToTopic(topic)" class="topic-wrapper">
-         <div class="topic">{{topic}}</div>
+      <div (click)="goToTopic(topic.route)" class="topic-wrapper">
+         <div class="topic">{{topic.topic}}</div>
       </div>
    </div>
-   <app-footer></app-footer>
 </div>
