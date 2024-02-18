@@ -74,18 +74,18 @@ export const englishData = {
          {
            prompt: 'What is the role of the Principal?',
            options: ["They teach your child in a given discipline.", "They assist your child in improving their english", "They oversee the school your student attends and often diffuse in-school conflict"],
-           answer: 'They oversee the school your student attends and often diffuse in-school conflict', // what index in options is correct
+           answer: 2, // what index in options is correct
          },
          {
            prompt: 'What is the purpose of standardized tests?',
            options: ["To help determine your child’s academic performance provide a grade", "To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant", "To see if your child qualifies for an extracurricular activity"],
-           answer: 'To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant',
+           answer: 1,
      
          },
          {
            prompt: 'True or False: Your student is entitled to free language assistance',
            options: ["True", "False"],
-           answer: 'True',
+           answer: 0,
          },
        ]
    },
@@ -124,18 +124,18 @@ export const englishData = {
          {
            prompt: 'What is required by most entry-level jobs?',
            options: ["A highly specialized degree", "vocational training", "A High School Diplomacy or equivalence"],
-           answer: 'A High School Diplomacy or equivalence]',
+           answer: 2,
          },
          {
            prompt: 'American higher education is now highly accessible due to the internet',
            options: ["True", "False"],
-           answer: 'True',
+           answer: 0,
      
          },
          {
            prompt: 'Which of the following is a suitable place to receive basic education for adults?',
            options: ["community college", "libraries", "community center", "all of the above"],
-           answer: 'all of the above',
+           answer: 3,
          },
        ]
    },
@@ -178,19 +178,19 @@ export const englishData = {
          {
            prompt: 'How can you protect yourself from immigration fraud? ',
            options: ["Trust everything the agency says because they know everything", "Make sure to ask for qualifications and ask for bar certification and BIA accreditation letter", "Do not ask questions and stay quiet"],
-           answer: 'Make sure to ask for qualifications and ask for bar certification and BIA accreditation letter',
+           answer: 1,
          },
          {
            prompt: 'True or False: Not checking for certification can trigger deportation proceedings',
            options: ["True", "False"],
-           answer: 'True: Agencies will trick you if you are not careful and sign with a certified agency.',
+           answer: 0,
      
          },
          {
 	//Only three questions or is 4 allowed?
            prompt: 'How can you report agency fraud if you are a victim?',
            options: ["Call state or local attorney", "Call police department and let them know about the agencies scam", "Report the unauthorized practice on teh USCIS website", "All of the above"],
-           answer: 'All of the above',
+           answer: 3,
          },
        ]
    },
@@ -258,18 +258,18 @@ export const englishData = {
          {
            prompt: 'Anti-Discriminatory laws protect illegal immigrants from what? ',
            options: ["From being fired, refused hire, all unequal treatment because of your race, religion, origin.", "Given the rights to apply for a work permit", "Being deported or sent to jail for being undocumented"],
-           answer: 'From being fired, refused hire, all unequal treatment because of your race, religion, origin.',
+           answer: 0,
          },
          {
            prompt: 'True or False: You can work without a work permit.',
            options: ["True", "False"],
-           answer: 'False: You can not work without a permit or you will be subject for deportation if caught without one',
+           answer: 1,
      
          },
          {
            prompt: 'What is the first step to getting a Work permit?',
            options: ["Hire an attorney", "obtain a job offer from a place of employment", "have been working for more than 2 months"],
-           answer: 'obtain a job offer from a place of employment',
+           answer: 1,
          },
        ]
    },
@@ -319,8 +319,6 @@ export const englishData = {
 "Pamphlet for legal services: https://www.calbar.ca.gov/Portals/0/documents/ConsumerInformation/Legal-Services-for-Immigrants-EN.pdf", 
 "BIA-recognized Organizations: https://www.justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster-state-and-city",
 "Pro Bono Services: https://www.justice.gov/eoir/list-pro-bono-legal-service-providers"],
-
-
             image: ' links '
          },
 
@@ -332,18 +330,18 @@ export const englishData = {
          {
            prompt: 'What are Red Cards used for?',
            options: ["Help you assert your rights and defend yourself from government officials as an immigrant", "Helps you get out of jail", "Helps you hide your immigration status and prevent deportation"],
-           answer: 'Help you assert your rights and defend yourself from government officials as an immigrant',
+           answer: 0,
          },
          {
            prompt: 'What is the name of attorneys and organizations that are free of charge for your use?',
            options: ["Pro Bono Service Providers", "Free help services", "Legal Assistance for free"],
-           answer: 'Pro Bono Service Providers',
+           answer: 0,
      
          },
          {
            prompt: 'Why should you become a US citizen?',
            options: ["Can make you earn more money", "It looks good when you apply for a job", "Gain rights and privileges without fear of being deported"],
-           answer: 'Gain rights and privileges without fear of being deported',
+           answer: 2,
          },
        ]
    },

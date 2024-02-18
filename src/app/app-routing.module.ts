@@ -5,7 +5,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SelectLanguageComponent } from './select-language/select-language.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EducationPageComponent } from './education-page/education-page.component';
-import { EducationComponent } from './education/education.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { MapPageComponent } from './map-page/map-page.component';
 import { QuizComponent } from './shared/quiz/quiz.component';
