@@ -10,8 +10,7 @@ import { englishData } from '../../../data/data';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent {
-
-
+  
   selectedValue: string[] = ['', '', ''];
   questions = englishData['education-for-children']['quiz']
   answers = this.questions.map((a: { answer: any; }) => a.answer);

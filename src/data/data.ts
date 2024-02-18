@@ -68,7 +68,6 @@ export const englishData = {
 
       ],
       quiz: [
-
          {
            prompt: 'What is 2+2?',
            options: [2, 3, 4],
