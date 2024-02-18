@@ -13,11 +13,11 @@ export class DashboardComponent {
   topics = [
     {
       topic: 'Education for Children',
-      route: 'education-for-children'
+      route: 'education-for-children',
     },
     {
       topic: 'Education for Adults',
-      route: 'education-for-adults'
+      route: 'education-for-adults',
     },
     {
       topic: 'Judicial Systems',
@@ -27,6 +27,24 @@ export class DashboardComponent {
       topic: 'Health Care',
       route: 'health-care',
     },
+    {
+      topic: 'Resources',
+      route: 'resources',
+    },
+    {
+      topic: 'Getting The Help You Need',
+      route: 'understand-the-help-you-need',
+    },
+    {
+      topic: 'Labour Laws',
+      route: 'labor-laws',
+
+    },
+    {
+      topic: 'Judicial System',
+      route: 'judicial-system',
+    }
+    
   ];
 
   goToTopic(topic: string) {
