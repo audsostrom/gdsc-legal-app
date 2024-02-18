@@ -19,6 +19,9 @@ export class EducationPageComponent {
     map((params) => params.get('id')),
   );
 
+  title$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['title']) 
+  );
+
   content$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['content']) 
   );
   constructor(
@@ -38,7 +41,9 @@ export class EducationPageComponent {
       this.pageNum += 1
     }
     else if (this.pageNum == this.contentLength - 1) {
-      this.router.navigate([`/quiz/${this.id}`]);
+      this.pageSection$.subscribe(id => {
+        this.router.navigate([`/quiz/${id}`]);
+      })
 
     }
   }

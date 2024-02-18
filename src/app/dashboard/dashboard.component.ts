@@ -13,19 +13,19 @@ export class DashboardComponent {
   topics = [
     {
       topic: 'Education for Children',
-      route: 'education-for-children'
+      route: 'education-for-children',
     },
     {
       topic: 'Education for Adults',
       route: 'education-for-adults'
     },
     {
-      topic: 'Judicial Systems',
-      route: 'judicial-systems',
+      topic: 'Labor Laws for Immigrants',
+      route: 'understand-the-help-you-need',
     },
     {
-      topic: 'Health Care',
-      route: 'health-care',
+      topic: 'Labor Laws for Immigrants',
+      route: 'labor-laws',
     },
   ];
 

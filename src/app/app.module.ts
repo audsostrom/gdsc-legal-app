@@ -13,6 +13,10 @@ import { EducationComponent } from './education/education.component';
 import { FactComponent } from './fact/fact.component';
 import { FactService } from './fact.service';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -20,6 +24,8 @@ import { QuizComponent } from './shared/quiz/quiz.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { MapPageComponent } from './map-page/map-page.component';
 import { CongratsComponent } from './congrats/congrats.component';
+import { QuizModalComponent } from './shared/quiz-modal/quiz-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,6 +41,7 @@ import { CongratsComponent } from './congrats/congrats.component';
     MapPageComponent,
     QuizComponent,
     CongratsComponent,
+    QuizModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +49,10 @@ import { CongratsComponent } from './congrats/congrats.component';
     MatRadioModule,
     GoogleMapsComponent,
     FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [FactService],
   bootstrap: [AppComponent]
