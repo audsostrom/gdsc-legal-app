@@ -18,7 +18,6 @@ export class QuizComponent {
   selectedValue: string[] = ['', '', ''];
   questions = englishData['education-for-children']['quiz']
   answers = this.questions.map((a: { answer: any; }) => a.answer);
-  dialogConfig = new MatDialogConfig();
   
   animal: string = 'bleh';
   name: string = 'blah';
@@ -52,7 +51,11 @@ export class QuizComponent {
       this.router.navigate(['/congrats']);
 
     } else {
-      const dialogRef = this.dialog.open(QuizModalComponent, this.dialogConfig);
+      const dialogRef = this.dialog.open(QuizModalComponent, {
+        width: '250px',
+        height: '250px',
+        panelClass: ['bg-color'], // Add your custom panel class
+      });
   
       dialogRef.afterClosed().subscribe(result => {
         console.log('The dialog was closed');

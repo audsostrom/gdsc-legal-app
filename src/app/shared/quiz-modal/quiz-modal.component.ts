@@ -26,10 +26,10 @@ export interface DialogData {
 })
 export class QuizModalComponent {
   constructor(
-    public dialogRef: MatDialogRef<QuizModalComponent>,
+    private dialogRef: MatDialogRef<QuizModalComponent>,
   ) {}
 
-  onNoClick(): void {
+  goBack(): void {
     this.dialogRef.close();
   }
 

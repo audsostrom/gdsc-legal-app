@@ -1,11 +1,12 @@
 
 .quiz-container {
    display: flex;
+   height: 100vh;
    flex-direction: column;
    justify-content: center;
    font-family: 'Poppins';
    background: #F3F4F6;
-   padding-bottom: 50px;
+   overflow: scroll;
 
    .header {
       background: #984063;
