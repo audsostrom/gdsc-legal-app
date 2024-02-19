@@ -1,0 +1,18 @@
+.modal-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   justify-self: center;
+   align-content: center;
+   font-family: 'Poppins';
+   margin: 20px;
+   .warning {
+      margin-bottom: 20px;
+   }
+   .go-back {
+      font-family: 'Poppins';
+
+   }
+}
