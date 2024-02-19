@@ -53,7 +53,6 @@ export class QuizComponent {
     } else {
       const dialogRef = this.dialog.open(QuizModalComponent, {
         width: '250px',
-        height: '250px',
         panelClass: ['bg-color'], // Add your custom panel class
       });
   

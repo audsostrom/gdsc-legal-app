@@ -1,13 +1,11 @@
 
 .quiz-container {
    display: flex;
-   height: 100vh;
    flex-direction: column;
    justify-content: center;
    font-family: 'Poppins';
    background: #F3F4F6;
-   overflow: scroll;
-
+   padding-bottom: 60px;
    .header {
       background: #984063;
       font-weight: bold;
@@ -54,6 +52,10 @@
       width: 90%;
       align-self: center;
       margin-bottom: 30px;
+   }
+
+   ::ng-deep .cdk-overlay-pane {
+      align-items: center;
    }
 
 }
