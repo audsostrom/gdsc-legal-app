@@ -36,6 +36,27 @@ export class GoogleMapsComponent implements OnInit {
               map: map,
               title: "Your Location"
             });
+
+            // // Autocomplete functionality
+            // const input = document.getElementById("pac-input") as HTMLInputElement;
+            // const autocomplete = new google.maps.places.Autocomplete(input);
+            // autocomplete.bindTo("bounds", map);
+
+            // autocomplete.addListener("place_changed", () => {
+            //   const place = autocomplete.getPlace();
+            //   if (!place.geometry || !place.geometry.location) {
+            //     console.error("Place not found");
+            //     return;
+            //   }
+            //   // If the place has a geometry, set map center and add a marker
+            //   map.setCenter(place.geometry.location);
+            //   map.setZoom(15);
+            //   new google.maps.Marker({
+            //     position: place.geometry.location,
+            //     map: map,
+            //     title: place.name
+            //   });
+            // });
           }, () => {
             console.error('Error: The Geolocation service failed.');
           });
