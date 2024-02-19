@@ -4,6 +4,7 @@ import { englishData } from '../../data/data';
 import { spanishData } from 'src/data/spanish';
 import { map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { arabicData } from 'src/data/arabic';
 
 @Component({
   selector: 'app-education-page',
@@ -16,9 +17,10 @@ export class EducationPageComponent {
   contentLength: number = 0;
 
   language: string | null = localStorage.getItem('language');
-  data = this.language == 'English' ? englishData : spanishData;
 
-  // @Input() section: string = 'education-for-children'; // idk what the type is lol
+  // we love ternary operators :D
+  data = this.language == 'English' ? englishData : (this.language == 'Spanish' ? spanishData : arabicData);
+
   pageSection$ = this.route.paramMap.pipe(
     map((params) => params.get('id')),
   );

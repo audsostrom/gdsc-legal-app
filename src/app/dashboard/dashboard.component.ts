@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { englishData } from 'src/data/data';
+import { spanishData } from 'src/data/spanish';
+import { arabicData } from 'src/data/arabic';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,39 +12,34 @@ import { Router } from '@angular/router';
 export class DashboardComponent {
   constructor(private router: Router){
   }
+  language: string | null = localStorage.getItem('language');
+
+  // we love ternary operators :D
+  data = this.language == 'English' ? englishData : (this.language == 'Spanish' ? spanishData : arabicData);
 
   topics = [
     {
-      topic: 'Education for Children',
+      topic: this.data['education-for-children' as keyof typeof this.data].title,
       route: 'education-for-children',
     },
     {
-      topic: 'Education for Adults',
+      topic: this.data['education-for-adults' as keyof typeof this.data].title,
       route: 'education-for-adults',
     },
     {
-      topic: 'Understand the Help You Need',
+      topic: this.data['understand-the-help-you-need' as keyof typeof this.data].title,
       route: 'understand-the-help-you-need',
     },
     {
-      topic: 'Labor Laws for Immigrants',
+      topic: this.data['labor-laws' as keyof typeof this.data].title,
       route: 'labor-laws',
     },
     {
-      topic: 'Resources',
+      topic: this.data['resources' as keyof typeof this.data].title,
       route: 'resources',
     },
     {
-      topic: 'Getting The Help You Need',
-      route: 'understand-the-help-you-need',
-    },
-    {
-      topic: 'Labour Laws',
-      route: 'labor-laws',
-
-    },
-    {
-      topic: 'Judicial System',
+      topic:  this.data['judicial-system' as keyof typeof this.data].title,
       route: 'judicial-system',
     }
     
