@@ -17,7 +17,7 @@ export class DashboardComponent {
     },
     {
       topic: 'Education for Adults',
-      route: 'education-for-adults'
+      route: 'education-for-adults',
     },
     {
       topic: 'Understand the Help You Need',
@@ -27,6 +27,24 @@ export class DashboardComponent {
       topic: 'Labor Laws for Immigrants',
       route: 'labor-laws',
     },
+    {
+      topic: 'Resources',
+      route: 'resources',
+    },
+    {
+      topic: 'Getting The Help You Need',
+      route: 'understand-the-help-you-need',
+    },
+    {
+      topic: 'Labour Laws',
+      route: 'labor-laws',
+
+    },
+    {
+      topic: 'Judicial System',
+      route: 'judicial-system',
+    }
+    
   ];
 
   goToTopic(topic: string) {
