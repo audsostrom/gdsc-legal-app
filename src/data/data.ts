@@ -141,7 +141,7 @@ export const englishData = {
    },
 
    "understand-the-help-you-need": {
-      title: 'Labor Laws for Immigrants',
+      title: 'Understand the Help You Need',
       description: 'It is important to research what kind of help you need and protect yourself from becoming a victim of immigration fraud. Understanding the right from wrong will prevent any more issues from occurring based on your immigration status',
       content: [
          {
