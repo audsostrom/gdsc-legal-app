@@ -1,4 +1,16 @@
 .full{
-	width:100vw;
-	height: 100vh;
+    width:100vw;
+    height: 100vh;
 }
+
+.controls {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 20px;
+    z-index: 1;
+    background-color: #ffffff;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 20px; /* Adjust border radius as needed */
+    width: 80%; /* Adjust width as needed */
+}
+
