@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MatRadioChange } from '@angular/material/radio';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import * as confetti from 'canvas-confetti';
 import { englishData } from '../../../data/data';
 import { QuizModalComponent } from '../quiz-modal/quiz-modal.component';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { map } from 'rxjs';
 
 
 @Component({
@@ -13,6 +14,14 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent {
+
+  pageSection$ = this.route.paramMap.pipe(
+    map((params) => params.get('id')),
+  );
+
+  title$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['title']) 
+  );
+
 
 
   selectedValue: string[] = ['', '', ''];
@@ -24,6 +33,7 @@ export class QuizComponent {
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     public dialog: MatDialog,
     ){
   }

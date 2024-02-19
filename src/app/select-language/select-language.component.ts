@@ -19,8 +19,11 @@ export class SelectLanguageComponent implements OnInit {
     console.log(router.url );
   }
 
-  redirectPage(){
+  redirectPage(language: any){
+
     this.router.navigate(['/dashboard']);
+    localStorage.setItem('language', language);
+    console.log(language);
   }
   ngOnInit() { 
 

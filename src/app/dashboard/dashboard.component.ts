@@ -20,7 +20,7 @@ export class DashboardComponent {
       route: 'education-for-adults'
     },
     {
-      topic: 'Labor Laws for Immigrants',
+      topic: 'Understand the Help You Need',
       route: 'understand-the-help-you-need',
     },
     {

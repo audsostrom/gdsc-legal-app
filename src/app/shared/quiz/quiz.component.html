@@ -1,5 +1,5 @@
 <div class="quiz-container">
-   <div class="header">Education</div>
+   <div class="header" *ngIf="title$ | async as title">{{title}}</div>
    <div class="options-wrapper" *ngFor="let question of questions; index as i">
       <div class="question-header"><b>Question {{i+1}}</b></div>
       <div class="question-prompt">{{question.prompt}}</div>
