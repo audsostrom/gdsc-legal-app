@@ -140,8 +140,8 @@ export const englishData = {
        ]
    },
 
-   "Understand the Help You Need": {
-      title: 'Labor Laws for Immigrants',
+   "understand-the-help-you-need": {
+      title: 'Understand the Help You Need',
       description: 'It is important to research what kind of help you need and protect yourself from becoming a victim of immigration fraud. Understanding the right from wrong will prevent any more issues from occurring based on your immigration status',
       content: [
          {
@@ -195,7 +195,7 @@ export const englishData = {
        ]
    },
 
-   "Labor Laws": {
+   "labor-laws": {
       title: 'Labor Laws for Immigrants',
       description: 'All workers should be able to work free from fear that they will be underpaid or placed in a dangerous environment. Unfortunately, this is not the case for many low-income immigrant workers in this country. Understanding your rights, raid responses and policy analysis is important for your safety. It is the policy of the DLSE not to question your immigration status Whether you are a documented or undocumented worker in California, you have rights protected by state laws that guarantee payment of wages for work performed',
       content: [
