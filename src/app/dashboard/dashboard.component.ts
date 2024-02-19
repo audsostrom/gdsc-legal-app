@@ -20,12 +20,12 @@ export class DashboardComponent {
       route: 'education-for-adults',
     },
     {
-      topic: 'Judicial Systems',
-      route: 'judicial-systems',
+      topic: 'Understand the Help You Need',
+      route: 'understand-the-help-you-need',
     },
     {
-      topic: 'Health Care',
-      route: 'health-care',
+      topic: 'Labor Laws for Immigrants',
+      route: 'labor-laws',
     },
     {
       topic: 'Resources',
