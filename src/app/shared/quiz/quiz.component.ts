@@ -6,6 +6,8 @@ import { englishData } from '../../../data/data';
 import { QuizModalComponent } from '../quiz-modal/quiz-modal.component';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { map } from 'rxjs';
+import { spanishData } from 'src/data/spanish';
+import { arabicData } from 'src/data/arabic';
 
 
 @Component({
@@ -19,17 +21,22 @@ export class QuizComponent {
     map((params) => params.get('id')),
   );
 
-  title$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['title']) 
+  language: string | null = localStorage.getItem('language');
+
+  // we love ternary operators :D
+  data = this.language == 'English' ? englishData : (this.language == 'Spanish' ? spanishData : arabicData);
+
+
+  title$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['title']) 
   );
 
-
-
   selectedValue: string[] = ['', '', ''];
-  questions = englishData['education-for-children']['quiz']
-  answers = this.questions.map((a: { answer: any; }) => a.answer);
+  questions$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['quiz']))
+  answers$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['quiz'].map(a => a.answer)));
   
   animal: string = 'bleh';
   name: string = 'blah';
+  difference: boolean | undefined;
 
   constructor(
     private router: Router,
@@ -44,10 +51,11 @@ export class QuizComponent {
   }
 
   submitAnswers() {
-    console.log(this.selectedValue, this.answers);
-    let difference = (this.selectedValue.sort().join(',') === this.answers.sort().join(','))
+    this.answers$.subscribe((answers) => 
+      this.difference = (this.selectedValue.sort().join(',') === answers.sort().join(','))
+    )
     // console.log("equals", difference?.length == 0 ? true : false)
-    if (difference) {
+    if (this.difference) {
       console.log('death')
       confetti.create()({
         shapes: ['square'],
