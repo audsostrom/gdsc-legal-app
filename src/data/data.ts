@@ -155,7 +155,7 @@ export const englishData = {
 	"- Ask for references before you sign (this includes their bar certification and other successful clients they have helped with similar problems to show they can help with your problems)",
 	"- Avoid paying cash and make sure you get a receipt",
 	"- Make sure you understand what you are signing"],
-            image: '../../assets/images/contract.png'
+            image: '../../assets/images/contract.jpeg'
          },
  
 

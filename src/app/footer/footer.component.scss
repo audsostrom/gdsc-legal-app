@@ -1,0 +1,16 @@
+.footer-container {
+   display: flex;
+   line-height: 40px;
+   height: 40px;
+   gap: 30px;
+   background: white;
+   width: 100vw;
+   justify-content: center;
+   font-family: 'Poppins';
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   .option:hover {
+      text-decoration: underline;
+ }
+}
