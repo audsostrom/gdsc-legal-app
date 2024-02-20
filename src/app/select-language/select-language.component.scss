@@ -12,6 +12,7 @@
       width: 85%;
       margin-bottom: 20px;
       margin-top: 40px;
+      height: 30px;
       .header {
          color: #141466;
          font-size: 20px;
@@ -19,8 +20,20 @@
          font-weight: 600;
          line-height: 20px;
          margin-bottom: 10px;
-
       }
+      .header:after {
+         content:"";
+         animation: spin 20s ease infinite;
+       }
+       
+       @keyframes spin {
+         0% { opacity: 0;}
+         5% { opacity: 1; content:"Select A Language"; }
+         15% { opacity: 0;}
+         40% { opacity: 1; content:"Selecciona un idioma";}
+         55% { opacity: 0;}
+         85% { content:"اختر لغة"; opacity: 1;}
+       }
 
    }
    .options-wrapper {
@@ -62,5 +75,23 @@
       font-weight: 800;
       color: white;
       padding: 10px 20px;
+      width: 200px;
+      height: 40px;
    }
+   .confirm-button:disabled {
+      background: gray;
+   }
+   .confirm-button:after {
+      content:"";
+      animation: spin 20s ease infinite;
+    }
+    
+    @keyframes spin {
+      0% { opacity: 0;}
+      5% { opacity: 1; content:"Confirm Selection"; }
+      15% { opacity: 0;}
+      40% { opacity: 1; content:"Confirmar selección";}
+      55% { opacity: 0;}
+      85% { content: "تأكيد الاختيار"; opacity: 1;}
+    }
 }

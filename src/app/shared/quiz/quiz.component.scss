@@ -5,7 +5,7 @@
    justify-content: center;
    font-family: 'Poppins';
    background: #F3F4F6;
-
+   padding-bottom: 60px;
    .header {
       background: #984063;
       font-weight: bold;
@@ -19,6 +19,7 @@
       margin-top: 20px;
       width: 90%;
       border-radius: 10px;
+      margin-left: 20px;
       .question-options {
          background-color: white;
          border: 1px solid #141466;
@@ -52,6 +53,10 @@
       width: 90%;
       align-self: center;
       margin-bottom: 30px;
+   }
+
+   ::ng-deep .cdk-overlay-pane {
+      align-items: center;
    }
 
 }

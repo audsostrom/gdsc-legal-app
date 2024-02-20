@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,12 +13,20 @@ import { EducationComponent } from './education/education.component';
 import { FactComponent } from './fact/fact.component';
 import { FactService } from './fact.service';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
 import { EducationPageComponent } from './education-page/education-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { QuizComponent } from './shared/quiz/quiz.component';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { MapPageComponent } from './map-page/map-page.component';
 import { CongratsComponent } from './congrats/congrats.component';
+import { QuizModalComponent } from './shared/quiz-modal/quiz-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,16 +38,21 @@ import { CongratsComponent } from './congrats/congrats.component';
     FactComponent,
     EducationPageComponent,
     FooterComponent,
-    //GoogleMapsComponent,
     MapPageComponent,
     QuizComponent,
-    GoogleMapsComponent,
     CongratsComponent,
+    QuizModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatRadioModule,
+    GoogleMapsComponent,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [FactService],
   bootstrap: [AppComponent]

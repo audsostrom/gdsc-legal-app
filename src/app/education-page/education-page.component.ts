@@ -1,8 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { englishData } from '../../data/data';
+import { spanishData } from 'src/data/spanish';
 import { map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { arabicData } from 'src/data/arabic';
 
 @Component({
   selector: 'app-education-page',
@@ -14,20 +16,25 @@ export class EducationPageComponent {
   unsubscribe$: Subject<void> = new Subject();
   contentLength: number = 0;
 
-  // @Input() section: string = 'education-for-children'; // idk what the type is lol
+  language: string | null = localStorage.getItem('language');
+
+  // we love ternary operators :D
+  data = this.language == 'English' ? englishData : (this.language == 'Spanish' ? spanishData : arabicData);
+
   pageSection$ = this.route.paramMap.pipe(
     map((params) => params.get('id')),
   );
 
-  content$ = this.pageSection$.pipe(map((section) => englishData[section as keyof typeof englishData]['content']) 
+  title$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['title']) 
+  );
+
+  content$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['content']) 
   );
   constructor(
     private router: Router,
     private route: ActivatedRoute,
   ){
   }
-  // id is hardcoded, needs to be transferred to firebase later
-  id: string = "education";
   // use this text to update when people go to the next section
   // content = englishData[this.section as keyof typeof englishData]['content'];
 
@@ -38,7 +45,9 @@ export class EducationPageComponent {
       this.pageNum += 1
     }
     else if (this.pageNum == this.contentLength - 1) {
-      this.router.navigate([`/quiz/${this.id}`]);
+      this.pageSection$.subscribe(id => {
+        this.router.navigate([`/quiz/${id}`]);
+      })
 
     }
   }
