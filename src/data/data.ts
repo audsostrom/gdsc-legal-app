@@ -6,7 +6,7 @@ export const englishData = {
          {
            headerTitle: 'What is public school?',
            bodyText: ["Public schools provide free education to children in the United States.", "They are paid for by the government with local taxes, state money, and federal resources. Any child can attend public school.", "There are children from all different cultures who speak many different languages in public schools across the USA. You do not have to be a U.S. citizen or a permanent resident for your child to go to public school."],
-           image: '../../assets/images/education-1.jpeg'
+           image: '../../assets/images/education-2.jpeg'
          },
          {
            headerTitle: 'Public school levels',
@@ -14,54 +14,54 @@ export const englishData = {
                      "Elementary School (Ages 5 to 10): In elementary school, kids learn the basics like reading, writing, and math.",
                      "Middle School (Ages 11 to 13): Middle school comes after elementary school. Here, kids learn more about math, science, and history, and they also explore other subjects like art and music. They also learn how to study better and organize their work.",
                      "High School (Ages 14 to 18): High school is where students get ready for their future. They take harder classes in things like math and history. They can also choose classes they are interested in and that help prepare them for college or a job."],
-           image: '../../assets/images/education-1.jpeg'
+           image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Enrolling your child',
             bodyText: ["The rules for signing your child up for school can vary depending on where you live. First, you will want to figure out what school serves the neighborhood you live in. You will then need to gather any needed paperwork, such as proof of residence and health records, and contact the school.",
                         "Learn more about enrolling your child.",
                         "Tips for starting a new school: If your child needs help learning English, ask what help the school offers. Try to visit the school during events like a welcome day or ask for a tour of the school with your child. Ask about clubs or sports your child can join. It is a good way to make friends."],
-            image: '../../assets/images/education-1.jpeg',
+            image: '../../assets/images/education-2.jpeg',
          },
          {
             headerTitle: 'Curriculum',
             bodyText: ["The term curriculum is used to refer to the array of subjects taught at a school. For example, English, Mathematics or science are all taught in a way that is aligned with a school’s curriculum.", "Public schools tend to follow a similar curriculum to one another. These schools are free institutions that are funded by the government via local tax dollars, state funding, and federal resources."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Grades',
             bodyText: ["Grades are used by teachers to represent a student’s performance in a Given Subject. They are usually represented with a letter such as  A, B, C, D or F. A is the best score a student will receive (roughly 90% or better) where F is the lowest score, (50% or below).", "A child’s GPA (Grade Point Average) is represented on a scale between 0.0 - 4.0. This score accounts for a students’ accumulative performance across all subjects over a given period, such as a year or a semester."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Standardized tests',
             bodyText: ["In the US, Standardized tests are assessments tests that are administered by the state. They are used to gauge the performance of both the student and the school. Standardized Tests do not impact a students’ academic performance.", "If your child is wanting to pursue a college education, they may be required to take the ACT or SAT standardized tests."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'School meals',
             bodyText: ["Many public schools offer paid meals for students. You may either purchase school-provided meals or provide your child with meals to bring to school." , "Some schools send out ‘Meal Applications’ for parents to fill out if they would like their child to receive free meals such as breakfast. If this would interest you, you may reach out to your child’s institution to see if they provide this option." ],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Student rights and laws',
             bodyText: ["It is within your child’s rights to be treated equally no matter their race, nationality, religion, or sexual orientation.", "They are free to express and practice their religion while at school and may not be questioned by the school or staff about the immigration status.", "If needed, your child is entitled to free language assistance.",],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Supporting your child',
             bodyText: ["There are several things parents can do for their child to ensure academic success.", "Keep up with school emails as well as school updates which can often be found on school websites.", "Check in with your child to see what they are learning about and if they are struggling in any subject. Stay updated with what classes they are taking and what is expected of them.", "Attending parent conference meetings to receive progress reports on your child."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'School staff and teachers',
             bodyText: ["Employees at a school all typically have different roles. It is important to familiarize yourself with the most common roles.", "The Principal oversees the entire institution and ensures that teachers and staff have everything they need to properly facilitate a learning environment. They may also deal with conflict concerning students.", "The Teachers are responsible for educating your student, usually within a certain discipline.", "Guidance Counselors are responsible for assisting students within both their academic and personal needs.", "The ESL (English as a Second Language) specialist helps students improve upon their written and spoken English."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
          {
             headerTitle: 'Extracurricular Activities and Career/College Preparation',
             bodyText: ["Extracurricular activities are offered by many schools as a free program that occurs either before or after school. They exist as a means for your child to explore their interests and build a community.", "Some common extracurriculars include sports, music clubs, or performing art clubs."],
-            image: '../../assets/images/education-1.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -74,18 +74,18 @@ export const englishData = {
          {
            prompt: 'What is the role of the Principal?',
            options: ["They teach your child in a given discipline.", "They assist your child in improving their english", "They oversee the school your student attends and often diffuse in-school conflict"],
-           answer: 2, // what index in options is correct
+           answer: "They oversee the school your student attends and often diffuse in-school conflict", // what index in options is correct
          },
          {
            prompt: 'What is the purpose of standardized tests?',
            options: ["To help determine your child’s academic performance provide a grade", "To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant", "To see if your child qualifies for an extracurricular activity"],
-           answer: 1,
+           answer: "To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant",
      
          },
          {
            prompt: 'True or False: Your student is entitled to free language assistance',
            options: ["True", "False"],
-           answer: 0,
+           answer: "True",
          },
        ]
    },
@@ -145,7 +145,7 @@ export const englishData = {
          {
            headerTitle: 'Important things to remember',
            bodyText: ["No organization has connections with the USCIS. People will lie and make things sound too good to be true. Do not trust people that will guarantee results or faster processing. Ask any organization about their qualifications and ask to see copies of their BIA accreditation letter or bar certificate. By not asking to see their credentials, it could put your immigration status at risk and cause serious problems for you."],
-           image: '../../assets/images/ucics.png'
+           image: 'https://bridge24.com/wp-content/uploads/2019/07/checklists-workplace-image.png'
          },
 
 
@@ -155,7 +155,7 @@ export const englishData = {
 	"- Ask for references before you sign (this includes their bar certification and other successful clients they have helped with similar problems to show they can help with your problems)",
 	"- Avoid paying cash and make sure you get a receipt",
 	"- Make sure you understand what you are signing"],
-            image: '../../assets/images/contract.png'
+            image: '../../assets/images/education-2.jpeg'
          },
  
 
@@ -163,7 +163,7 @@ export const englishData = {
          {
             headerTitle: 'School staff and teachers',
             bodyText: ['lorem ipsum', 'hello', 'yuh'],
-            image: '../../assets/images/school-staff.jpeg',
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -201,7 +201,7 @@ export const englishData = {
            headerTitle: 'Workers Permit',
            bodyText: ["To apply for a job in the US you must be eligible to work for an employer. Without a worker's permit, you are not allowed to work within the US and if caught working without a permit will be subject to deportation.", 
 "To work in the US, you have to be authorized to accept employment first, meaning that you have a job being offered to you. Having a work permit can sometimes help you become eligible to obtain other important documentation such as a social security number and driver's license which can help you towards becoming a citizen in the future."], 
-            image: '../../assets/images/work-permit.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -210,7 +210,7 @@ export const englishData = {
      {
            headerTitle: 'Are you eligible for a work permit?',
            bodyText: ["Additionally, when you are applying for a work permit, you should determine if you are eligible for a work permit. Through the help of an immigration attorney, these are people who can help you understand the government forms being filled out for your permit and help you with questions. Refer to the section (Understanding the Help You Need) and remember what you should ask any organization before you work with them. Immigration attorneys can help you to understand your immigration status and how you can get a work permit. There are many things to consider so reaching out to one is the best solution."],
-            image: '../../assets/images/legal-representation.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -221,7 +221,7 @@ export const englishData = {
            bodyText: ["The process of obtaining a work permit can be very confusing and frustrating. Making sure you do not miss or misfile information can cause a major delay or even dismissal of workers' rights so it's important to check everything in the documents.", 
 "After you have filled out, and looked over every document with your attorney or by yourself, you will be sent a Notice of Receipt and will be asked to a biometrics appointment. Your decision will be sent by mail and if approved, so will your worker's permit.",
 "It is important that you do not work without a work permit as this will cause problems that lead to deportation and bar you from entering the US."],
-           image: '../../assets/images/work-permit-2.jpeg'
+           image: 'https://www.emsylaw.com/wp-content/uploads/2019/04/Request-for-a-Work-Permit-Immigration-Law-Group-LLC-1200x900.jpg'
          },
 
 
@@ -235,7 +235,7 @@ export const englishData = {
       "- If you need to file a claim, contact the federal Equal Employment Opportunity Commission (EEOC) or the Civil Rights Department. If you are filing through the EEOC (link provided) you must create an account before you can file a charge."],
 
 
-           image: '../../assets/images/discrimination.jpeg'
+           image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -245,7 +245,7 @@ export const englishData = {
             headerTitle: 'Links',
             bodyText: ["Applying for work permit (look for “I-765 | Application for Employment Authorization): https://www.uscis.gov/file-online/forms-available-to-file-online”)", 
             "Report work discrimination: https://www.eeoc.gov/filing-charge-discrimination"],
-            image: '../../assets/images/work-permit.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
       ],
 
@@ -279,7 +279,7 @@ export const englishData = {
          {
            headerTitle: 'Low Cost Assistance',
            bodyText: ["Some agencies may require a lot of money for them to help you, there are low cost assistance options for those who are not financially able to hire a lawyer. BIA-recognized organizations represent immigrants from a non-profit social service known as the Board of Immigration Appeals. A list of these organizations can be found in the links at the end to help you find one near you. There are also free legal service providers provided by The Department of Justice who are in immigration proceedings. Attorneys and organizations on this list have agreed to help immigrants FREE OF CHARGE, only in immigration proceedings. These are known as Pro Bono Service providers."],
-           image: '../../assets/images/agencies.jpeg'
+           image: ' agencies '
          },
 
 
@@ -288,14 +288,14 @@ export const englishData = {
          {
            headerTitle: 'Red Card',
            bodyText: ["All people within the United States, regardless of immigration status are protected under certain rights that are under the U.S. Constitution. Red Cards are serviced through the Immigrant Legal Resource Center (ILRC) and can help people to assert their rights and defend themselves in many situations. If you are approached by a police officer or immigration enforcement, these are helpful for understanding what to ask and what to say. You can also simply just show them your Red Card and remain silent as this is exercising your Right to remain silent (Fifth Amendment). You can print these out in your native language at home, public library or even community college. They can also be obtained by filling out an application and receiving them to your home address."],
-           image: '../../assets/images/red-cards.jpeg'
+           image: ' red card'
          },
 
 
          {
            headerTitle: 'US Citizenship',
-           bodyText: ["In order to qualify for U.S. citizenship, you must have had LPR (Lawful Permanent Resident) status, also called a green card, for at least 5 years. It may only take 3 years IF a green card is obtained through a U.S. citizen spouse or through the Violence Against Women Act (VAWA). You must be over the age of 18 and demonstrate continuous residency, demonstrate 'good moral character' and pass English and US history exams. It is good practice to speak with a lawyer for this process and become familiar with what you are eligible for. Considering getting a US citizenship is important as you get certain rights and privileges. Permanent residents have most of the rights of U.S. citizens and can evade you from being deported and help with settling down in the US."],
-           image: '../../assets/images/green-card.jpeg'
+           bodyText: ["In order to qualify for U.S. citizenship, you must have had LPR(Lawful Permanent Resident) status, also called a green card, for at least 5 years. It may only take 3 years IF a green card is obtained through a U.S. citizen spouse or through the Violence Against Women Act (VAWA). You must be over the age of 18 and demonstrate continuous residency, demonstrate 'good moral character' and pass English and US history exams. It is good practice to speak with a lawyer for this process and become familiar with what you are eligible for. Considering getting a US citizenship is important as you get certain rights and privileges. Permanent residents have most of the rights of U.S. citizens and can evade you from being deported and help with settling down in the US."],
+           image: ' citizenship card'
          },
 
 
@@ -306,7 +306,7 @@ export const englishData = {
             bodyText: ["Has information on where you can get help. understanding education and Health Care, why they should become a US citizen  (some immigrants like to keep their immigration status). There is also information on learning English, more information on adult information, and other federal benefit programs that can help you. There is information on becoming a U.S. Citizen, where you can go for help, and where you can find Federal Offices."],
 
 
-            image: '../../assets/images/books.png',
+            image: 'papers and books',
          },
 
 
@@ -317,7 +317,7 @@ export const englishData = {
 "Pamphlet for legal services: https://www.calbar.ca.gov/Portals/0/documents/ConsumerInformation/Legal-Services-for-Immigrants-EN.pdf", 
 "BIA-recognized Organizations: https://www.justice.gov/eoir/recognized-organizations-and-accredited-representatives-roster-state-and-city",
 "Pro Bono Services: https://www.justice.gov/eoir/list-pro-bono-legal-service-providers"],
-            image: '../../assets/images/agencies.jpeg'
+            image: ' links '
          },
 
 
@@ -350,34 +350,34 @@ export const englishData = {
          {
            headerTitle: 'Immigration Courts',
            bodyText: ["These are specialized courts that handle cases related to immigration law. Immigration courts are part of the Executive Office for Immigration Review (EOIR), which falls under the jurisdiction of the US Department of Justice. Immigration judges preside over these courts and adjudicate cases involving matters such as deportation/removal proceedings, asylum claims, and applications for relief from removal."],
-           image: '../../assets/images/immigration-court.jpeg',
+           image: ' '
          },
 
 
          {
             headerTitle: 'Board of Immigration Appeals (BIA)',
             bodyText: ["The BIA is an appellate body that reviews decisions made by immigration judges. If a party disagrees with the outcome of their case in immigration court, they can appeal to the BIA for a review. The BIA considers legal arguments and evidence presented by both sides before issuing a decision."],
-            image: '../../assets/images/bia.jpeg',
+            image: '../../assets/images/education-2.jpeg',
          },
 
          {
             headerTitle: 'Federal Courts',
             bodyText: ["If a party is dissatisfied with the decision of the BIA or believes that their constitutional rights have been violated during the immigration proceedings, they may seek review in the federal court system. This typically involves filing a petition for review in a federal appeals court. Federal courts have the authority to review administrative decisions and ensure that they comply with the law"],
-            image: '../../assets/images/federal-courts.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
          {
             headerTitle: 'Legal Representation',
             bodyText: ["immigrants in removal proceedings have the right to be represented by an attorney, but the government does not provide them with legal counsel. However, immigrants may seek assistance from nonprofit organizations, pro bono attorneys, or private immigration lawyers to represent them in court."],
-            image: '../../assets/images/legal-representation.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
          {
             headerTitle: 'Immigration Detention',
             bodyText: ["Some immigrants may be detained by immigration authorities during removal proceedings. Detained immigrants have the right to appear before an immigration judge for a bond hearing, where the judge determines whether they should be released from custody pending the outcome of their case"],
-            image: '../../assets/images/immigration-centers.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
@@ -386,7 +386,7 @@ export const englishData = {
          {
             headerTitle: 'Immigration Enforcement Agencies',
             bodyText: ["Immigration enforcement is primarily carried out by agencies such as U.S. Immigration and Customs Enforcement (ICE) and U.S. Customs and Border Protection (CBP). These agencies investigate immigration violations, detain individuals suspected of being in the country unlawfully, and initiate removal proceedings."],
-            image: '../../assets/images/us-customs.jpeg'
+            image: '../../assets/images/education-2.jpeg'
          },
 
 
