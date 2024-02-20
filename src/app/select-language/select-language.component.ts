@@ -19,6 +19,7 @@ export class SelectLanguageComponent implements OnInit {
     console.log(router.url );
   }
 
+
   redirectPage(language: any){
 
     this.router.navigate(['/dashboard']);

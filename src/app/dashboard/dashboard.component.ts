@@ -17,6 +17,8 @@ export class DashboardComponent {
   // we love ternary operators :D
   data = this.language == 'English' ? englishData : (this.language == 'Spanish' ? spanishData : arabicData);
 
+  titleText = this.language == 'English' ? "What would you like to learn about?" : (this.language == 'Spanish' ? "¿Sobre qué te gustaría aprender?" : "ماذا تريد أن تتعلم عنه؟");
+
   topics = [
     {
       topic: this.data['education-for-children' as keyof typeof this.data].title,

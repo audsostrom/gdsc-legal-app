@@ -1,7 +1,6 @@
 <div class="select-language-container">
    <div class="top-text">
-      <div class="header">Select a langage</div>
-      <div class="subheader">Text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</div>
+      <div class="header"></div>
    </div>
    <div class="options-wrapper">
       <mat-radio-group (change)="onChange($event)" class="language-options" aria-label="Select an option">
@@ -19,5 +18,5 @@
          </div>
     </mat-radio-group>
    </div>
-   <button class='confirm-button' [disabled]="selectedValue===0" (click)="redirectPage(selectedValue)">Confirm Selection</button>
+   <button class='confirm-button' [disabled]="selectedValue===0" (click)="redirectPage(selectedValue)"></button>
 </div>
