@@ -13,7 +13,7 @@ export class GoogleMapsComponent implements OnInit {
   ngOnInit(): void {
     let loader = new Loader({
       apiKey: 'AIzaSyCRD-Aseoxpt8UwfLuWS4MFHwO-apUtQu4',
-      libraries: ['places'] // Add the 'places' library
+      libraries: ['places', 'geometry'] // Add the 'places' and 'geometry' libraries
     })
 
     loader.load().then((google) => {
@@ -57,6 +57,27 @@ export class GoogleMapsComponent implements OnInit {
                 map: map,
                 title: place.name
               });
+
+              // Directions functionality
+              const directionsService = new google.maps.DirectionsService();
+              const directionsRenderer = new google.maps.DirectionsRenderer({
+                map: map
+              });
+
+              directionsService.route(
+                {
+                  origin: userLocation,
+                  destination: place.geometry.location,
+                  travelMode: google.maps.TravelMode.DRIVING
+                },
+                (response, status) => {
+                  if (status === 'OK') {
+                    directionsRenderer.setDirections(response);
+                  } else {
+                    console.error('Directions request failed due to ' + status);
+                  }
+                }
+              );
             });
           }, () => {
             console.error('Error: The Geolocation service failed.');
@@ -70,3 +91,6 @@ export class GoogleMapsComponent implements OnInit {
     });
   }
 }
+
+
+//your API key: AIzaSyCRD-Aseoxpt8UwfLuWS4MFHwO-apUtQu4
