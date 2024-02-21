@@ -1,3 +1,19 @@
-<input class="controls" id="pac-input" type="text" placeholder="Search Location">
-<div class="full" id="map"> 
-</div>
+<!DOCTYPE html>
+<html>
+<body>
+
+<input class="controls" id="pac-input" placeholder="Search Location">
+<div class="full" id="map"></div>
+<div class="nearby-places">
+    <div class="place" *ngFor="let place of nearbyPlaces" (click)="onPlaceSelected(place)">
+      <h3>{{ place.name }}</h3>
+      <p>{{ place.vicinity }}</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+
+
