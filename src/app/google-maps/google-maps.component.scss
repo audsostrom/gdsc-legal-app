@@ -1,16 +1,41 @@
 .full{
-    width:100vw;
-    height: 100vh;
+	width:100vw;
+	height: 100vh;
 }
 
 .controls {
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    right: 20px;
-    z-index: 1;
-    background-color: #ffffff;
-    padding: 10px; /* Adjust padding as needed */
-    border-radius: 20px; /* Adjust border radius as needed */
-    width: 80%; /* Adjust width as needed */
+	position: absolute;
+	top: 60px; /* Adjust as needed */
+	right: 20px;
+	z-index: 1;
+	background-color: #ffffff;
+	padding: 10px; /* Adjust padding as needed */
+	border-radius: 20px; /* Adjust border radius as needed */
+	width: 80%; /* Adjust width as needed */
 }
-
+	
+.nearby-places-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of items */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow at the bottom */
+    
+    .nearby-place {
+      display: inline-block;
+      width: 200px; /* Adjust width as needed */
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease; /* Add smooth hover effect */
+      
+      &:hover {
+        transform: translateY(-5px); /* Lift the box slightly on hover */
+      }
+    }
+}
