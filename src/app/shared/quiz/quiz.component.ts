@@ -30,7 +30,7 @@ export class QuizComponent {
   title$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['title']) 
   );
 
-  selectedValue: string[] = ['', '', ''];
+  selectedValue: number[] = [1000, 1000, 1000];
   questions$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['quiz']))
   answers$ = this.pageSection$.pipe(map((section) => this.data[section as keyof typeof this.data]['quiz'].map(a => a.answer)));
   

@@ -74,18 +74,18 @@ export const englishData = {
          {
            prompt: 'What is the role of the Principal?',
            options: ["They teach your child in a given discipline.", "They assist your child in improving their english", "They oversee the school your student attends and often diffuse in-school conflict"],
-           answer: "They oversee the school your student attends and often diffuse in-school conflict", // what index in options is correct
+           answer: 2, // what index in options is correct
          },
          {
            prompt: 'What is the purpose of standardized tests?',
            options: ["To help determine your child’s academic performance provide a grade", "To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant", "To see if your child qualifies for an extracurricular activity"],
-           answer: "To help the state understand both the performance of a student and institution and for colleges to evaluate an applicant",
+           answer: 1,
      
          },
          {
            prompt: 'True or False: Your student is entitled to free language assistance',
            options: ["True", "False"],
-           answer: "True",
+           answer: 0,
          },
        ]
    },
@@ -395,18 +395,18 @@ export const englishData = {
          {
            prompt: 'What do immigration courts specialize in?',
            options: ["Making sure immigrants are granted citizenship", "focus on deportation/removal proceedings", "asylum claims, and applications for relief from removal", "Help with"],
-           answer: 'focus on deportation/removal proceedings, asylum claims',
+           answer: 1,
          },
          {
            prompt: 'If you are dissatisfied with the decision of the BIA, what can you do?',
            options: ["filing a petition for review in a federal appeals court", "File a complaint to the court", "Deal with the consequences"],
-           answer: 'filing a petition for review in a federal appeals court',
+           answer: 0,
      
          },
          {
            prompt: 'What can you do to get legal representation if you do not have enough money?',
            options: ["Pay lots of money to the first attorney you find", "do not get anyone to represent you as it will cause trouble", "seek assistance from nonprofit organizations"],
-           answer: 'seek assistance from nonprofit organizations',
+           answer: 2,
          },
        ]
    }
