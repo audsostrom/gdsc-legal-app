@@ -1,6 +1,6 @@
 
 
-export const englishData = {
+export const italianData = {
     "education-for-children": {
        title: 'Educazione per i bambini',
        description: 'Tutti i bambini hanno diritto all istruzione pubblica gratuita in ogni stato degli Stati Uniti. Ulteriori informazioni sulle scuole pubbliche negli Stati Uniti. Trova informazioni utili e scopri cosa aspettarti.',

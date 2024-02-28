@@ -32,7 +32,10 @@
          15% { opacity: 0;}
          40% { opacity: 1; content:"Selecciona un idioma";}
          55% { opacity: 0;}
-         85% { content:"اختر لغة"; opacity: 1;}
+         85% { opacity: 1; content: "تأكيد الاختيار";}
+         55% { opacity: 0;}
+         85% { opacity: 1; content: "Conferma la selezione";}
+         55% { opacity: 0;}
        }
 
    }
@@ -92,6 +95,9 @@
       15% { opacity: 0;}
       40% { opacity: 1; content:"Confirmar selección";}
       55% { opacity: 0;}
-      85% { content: "تأكيد الاختيار"; opacity: 1;}
+      85% { opacity: 1; content: "تأكيد الاختيار";}
+      55% { opacity: 0;}
+      85% { opacity: 1; content: "Conferma la selezione";}
+      55% { opacity: 0;}
     }
 }
